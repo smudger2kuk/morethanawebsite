@@ -1,0 +1,230 @@
+/* ### Standards ### */
+body, html {
+	box-sizing: border-box;
+	color: #221B1F;
+	font-family: 'Ropa Sans', sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	max-width: 100vw;
+	width: 100%;
+}
+p {margin: 0; padding: 0;}
+.full-page {
+	box-sizing: border-box;
+	display: block;
+	height: auto;
+	max-width: 100vw;
+	min-height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 5vh 10vw;
+	width: 100%;
+}
+
+section {
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 60vw;
+}
+section p {
+	font-size: 1.6em;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+/* ### Font Styling ### */
+h1 {font-size: 3em; text-align: center;}
+h2 {font-size: 2.4em;}
+h3 {font-size: 2.1em;}
+h4 {font-size: 1.9em; text-align: center;}
+h5 {font-size: 1.6em;}
+h6 {font-size: 1.3em;}
+p {font-size: 1em;}
+
+/* ### Colour Classes ### */
+.black {color: #221B1F;}
+.orange {color: #FC8E10;}
+.yellow {color: #E9EB63;}
+.darkgreen {color: #394945;}
+.lightgreen {color: #6C805C;}
+.white {color: #fff;}
+.bg-black {background-color: #221B1F; color: #E9EB63;}
+.bg-orange {background-color: #FC8E10; color: #fff;}
+.bg-yellow{background-color: #E9EB63; color: #394945;}
+.bg-darkgreen{background-color: #394945; color: #E9EB63;}
+.bg-lightgreen{background-color: #6C805C; color: #fff;}
+
+/* ### Re-usable Header ### */
+.sticky-banner {
+	height: auto;
+	font-size: 1.4em;
+	max-height: 15vh;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	width: 100%;
+}
+
+/* ### Landing Page Specific ### */
+.landing-page {
+	background-image: url(../images/coffee.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#main-logo {
+	display: block;
+	margin: auto;
+	margin-top: 30vh;
+	max-height: 20vh;
+	max-width: 80vw;
+}
+
+.nav-icon {
+	cursor: pointer;
+	animation: bounce 2s infinite;
+	 -webkit-animation: bounce 2s infinite;
+	 -moz-animation: bounce 2s infinite;
+}
+
+.centre-icon {
+	text-align: center;
+	width: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+ 40% {-webkit-transform: translateY(-30px);}
+ 60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-30px);}
+ 60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-30px);}
+ 60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-30px);}
+ 60% {transform: translateY(-15px);}
+} /* ### END of Landing Page Specific ### */
+
+/* ### Page 1 - Services ### */
+#page-one img{
+	display: block;
+	height: 100px;
+	margin: 0 auto;
+	width: 100px;
+	-webkit-transition: ease 0.5s;
+	transition: ease 0.5s;
+}
+
+#page-one img:hover {
+	cursor: pointer;
+	height: 110px;
+	width: 110px;
+}
+.icon-row {
+	height: 200px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.service-container {
+	height: 200px;
+	float: left;
+	width: 33%;
+}
+/* ### END of Page 1 ### */
+
+/* ### Page 2 - About Us ### */
+#page-two {}
+/* ### END of Page 2 ### */
+
+/* ### Footer ### */
+footer {
+	max-width: 100%;
+	padding: 0 10vw 1vh 10vw;
+}
+
+.grid-footer {
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	grid-template-rows: auto;
+	margin: 0;
+	width: 100%;
+}
+
+.item-a {grid-column: 1; grid-row: 1;}
+.item-b {grid-column: 2; grid-row: 1;}
+.item-c {grid-column: 3; grid-row: 1;}
+
+.footer-text {
+	display: block;
+	text-align: center;
+}
+
+.social-media {color: #E9EB63;}
+.social-media:hover {color: #FC8E10;}
+
+.footer-link {
+	text-decoration: none;
+	color: #FC8E10;
+}
+
+/* ### END of Footer ### */
+
+/* ### Media Queries ### */
+@media screen and (max-width: 1920px) {
+	section {
+		padding: 5vh 5vw;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.icon-row {
+		height: 100%;
+	}
+	.service-container {
+		float: left;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+}
+
+/* ### Mobile ### */
+@media screen and (max-width: 760px) {
+	section {
+		padding: 0;
+	}
+	section p {
+		text-align: justify;
+	}
+	.grid-footer {
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto auto;
+	}
+	.item-a {grid-column: 1; grid-row: 1; margin-bottom: 15px;}
+	.item-b {grid-column: 1; grid-row: 2; margin-bottom: 15px;}
+	.item-c {grid-column: 1; grid-row: 3; margin-bottom: 15px;}
+	
+}
+/* ### Media Queries END ### */

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>More Than A Website - Web Design Agency Swindon</title>
+		<meta description="We're a Web Design Agency with a difference. Based in Swindon, Wiltshire we offer more than just a website. We can cater for 
+		digital needs, including site maintenance, content writing, marketing and social media management. Get in touch to find out more.">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link type="text/css" href="https://fonts.googleapis.com/css?family=Archivo+Black|Ropa+Sans" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>		
+  	</head>
+	
+	<body>
+		<!-- ### LANDING PAGE ###  -->
+		<div class="full-page landing-page">
+		
+			<header>
+				<div id="brand-name">
+					<span class="orange">></span> <span class="black">More Than A </span><span class="orange">Website</span>
+					<nav>
+						<a href="index.html" class="nav-icon-link"><i class="fa fa-home orange" aria-hidden="true"></i><span class="tooltip">Home</span></a>
+						<a href="#" class="nav-icon-link" onclick="moveToDiv('#page-one');"><i class="fa fa-question-circle black" aria-hidden="true"></i><span class="tooltip">About Us</span></a>
+						<a href="web-design.html" class="nav-icon-link"><i class="fa fa-desktop black" aria-hidden="true"></i><span class="tooltip">Web Design</span></a>
+						<a href="#" class="nav-icon-link"><i class="fa fa-picture-o black" aria-hidden="true"></i><span class="tooltip">Portfolio</span></a>
+						<a href="mailto:contact@morethanawebsite.co.uk" class="nav-icon-link"><i class="fa fa-envelope black"></i><span class="tooltip">Contact Us</span></a>
+					</nav>
+				</div>
+				<div id="mobile-only">
+					<span class="orange"> ></span>MTA<span class="orange">W</span>
+				</div>
+				<span id="mobile-only-email"><a href="mailto:contact@morethanawebsite.co.uk"><i class="fa fa-envelope fa-2x orange"></i></a></span>
+				<span id="mobile-nav-icon" class="orange">&#8801;</span>
+			</header>
+			
+			<div class="hero-text">
+				<p>DESIGN.</p>
+				<p>SUPPORT.</p>
+				<p>REFINE.</p>
+				<p><span class="orange">GROW.</span></p>
+			</div>
+			
+			<div class="intro-text white">
+				<h2>Hello there<span class="orange"> !</span></h2>
+				<p>We're <span class="orange">More Than A Website</span>, a creative web design agency based in Swindon, Wiltshire.</p>
+				<p>We're not your average web design agency though, and we think you'll be pleasantly surprised at just how much we can do for you.</p>
+				<div class="navbox" onclick="moveToDiv('#page-one');">> Click here to find out how we can help your business grow. <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></div>	
+			</div>
+			<div class="centre-icon"><i class="fa fa-arrow-circle-o-down fa-3x nav-icon bounce orange" onclick="moveToDiv('#page-one');" aria-hidden="true"></i></div>
+		</div> <!-- ### LANDING PAGE END ### -->
+		
+		<!-- ### PAGE 1 - ABOUT US ###  -->
+		<div class="full-page bg-yellow" id="page-one">
+			<section>
+				<header>
+					<h1>ABOUT US</h1>
+				</header>
+					<p>Here at More Than A Website we like to do things differently.</p>
+					<p>We provide a wide range of services that differs to almost every other web design agency in Swindon and that's down to our founder, Mark Smith.</p>
+					<p>Mark has imbedded his experience in both the commerical &amp; charity sectors, in payment processing, project management and process improvement, which has given us a USP that other web agencies just don't offer.</p>
+					<p>You see, you get so much more than a website with us. We work to understand your business needs and can offer our expertise on more than just your website if you feel you need it.</p>
+					<p>Of course, we offer everthing you'd expect from a web design agency but on top of that we can support everything from your digital marketing and social media needs to Lean process improvement</p>
+					<p>You're more than a client to us and that will come across from our very first interaction. We go above and beyond for you and your business because we understand how precious your time and money is.</p>
+			</section>
+		</div> <!-- ### ABOUT US END ###  -->
+		
+		<!-- ### PAGE 2 - ABOUT US ###  -->
+		<div class="full-page bg-darkgreen" id="page-two">
+			<section>
+				<content>
+					<header>
+						<h1>OUR SERVICES</h1>
+					</header>
+					<p>Here at More Than A Website we like to do things differently.</p>
+					<p>We provide a wide range of services that differs to almost every other web design agency in Swindon and that's down to our founder, Mark Smith.</p>
+					<p>Mark has imbedded his experience in both the commerical &amp; charity sectors, in payment processing, project management and process improvement, which has given us a USP that other web agencies just don't offer.</p>
+					<p>You see, you get so much more than a website with us. We work to understand your business needs and can offer our expertise on more than just your website if you feel you need it.</p>
+					<p>Of course, we offer everthing you'd expect from a web design agency but on top of that we can support everything from your digital marketing and social media needs to Lean process improvement</p>
+					<p>You're more than a client to us and that will come across from our very first interaction. We go above and beyond for you and your business because we understand how precious your time and money is.</p>
+				</content>
+			</section>
+			
+		</div> <!-- ### ABOUT US END ###  -->
+		
+	</body>
+	
+	<script>	
+		function moveToDiv(id) {
+		$('html, body').animate({
+				scrollTop: $(id).offset().top
+			}, 1500);
+		};
+		
+	</script>
+	
+</html>

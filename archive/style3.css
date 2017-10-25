@@ -1,0 +1,13 @@
+body {margin: 0; padding: 0;}
+
+#hero-img {
+	background-image: url(/images/chicago-skyline-wide-2000x350.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 350px;
+}
+
+hero
