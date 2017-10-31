@@ -54,6 +54,7 @@ p {font-size: 1em;}
 .bg-yellow{background-color: #E9EB63; color: #394945;}
 .bg-darkgreen{background-color: #394945; color: #E9EB63;}
 .bg-lightgreen{background-color: #6C805C; color: #fff;}
+.bg-white {background-color: #fff; color: #394945;}
 
 /* ### Re-usable Header ### */
 .sticky-banner {
@@ -67,6 +68,32 @@ p {font-size: 1em;}
 	top: 0;
 	text-align: center;
 	width: 100%;
+}
+
+.page-banner {
+    min-height: 10vh;
+    padding: 2vh;
+}
+
+.header-logo {max-height: 10vh;}
+.menu-button {
+    background-color: #fc8e10;
+    border-radius: 10px;
+    border-style: none;
+    color: #fff;
+    font-size: 2em;
+    height: 10vh;
+    position: fixed;
+    right: 10px;
+    transition: 0.7s ease;
+    width: 120px;
+}
+
+.menu-button:hover {
+    background-color: #394945;
+    border: 2px solid #E9EB63;
+    color: #E9EB63;
+    cursor: pointer;
 }
 
 /* ### Landing Page Specific ### */
@@ -154,6 +181,46 @@ p {font-size: 1em;}
 /* ### Page 2 - About Us ### */
 #page-two {}
 /* ### END of Page 2 ### */
+
+/* ### WEB DESIGN PAGE ### */
+.row {width: 100%;}
+.web-design-container {
+    border: 2px solid #FC8E10;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    min-height: 85vh;
+    padding: 10px;
+    width: 46%;
+}
+#solutions {text-align: center; width: 100%;}
+#web-design-process {text-align: center; width: 100%;}
+.web-design-container h3, h4 {margin: 0; text-align: center;}
+.web-design-container ul li {
+    font-size: 1.2em;
+    line-height: 1.6em;;
+    list-style: square;
+}
+
+.btn-web-design {
+    border: 2px solid #394945;
+    border-radius: 90px;
+    background-color: #394945;
+    color: #fff;
+    display: block;
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 10px 20px;
+    transition: 0.7s ease;
+}
+
+.btn-web-design:hover {
+    background-color: #FC8E10;
+    border-color: #FC8E10;
+    cursor: pointer;
+}
+
+/* ### END OF WEB DESIGN PAGE ### */
 
 /* ### Footer ### */
 footer {
