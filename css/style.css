@@ -183,7 +183,7 @@ p {font-size: 1em;}
 /* ### END of Page 2 ### */
 
 /* ### WEB DESIGN PAGE ### */
-.row {width: 100%;}
+.row {display: block; width: 100%;}
 .web-design-container {
     border: 2px solid #FC8E10;
     float: left;
@@ -275,6 +275,10 @@ footer {
 		padding: 0;
 		width: 100%;
 	}
+    .web-design-container {
+        min-height: auto;
+        width:100%;
+    }
 }
 
 /* ### Mobile ### */
