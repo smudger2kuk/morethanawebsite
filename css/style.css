@@ -248,6 +248,12 @@ header {margin-bottom: 20px;}
 .tall-container {min-height: 85vh;}
 .medium-container {min-height 65vh;}
 .short-container {min-height: 50vh;}
+.portfolio-container {width: 100;}
+.example-container {
+    float: left;
+    margin: 2.5%;
+    width: 45%;
+}
 
 /* ### END OF PAGE SPECIFIC STYLING ### */
 
@@ -325,6 +331,11 @@ footer {
     .header-img {
         background-position: center;
         height: 200px;
+    }
+    .example-container {
+        float: none;
+        margin: 2.5%;
+        width: 95%;
     }
 	.grid-footer {
 		grid-template-columns: 100%;
