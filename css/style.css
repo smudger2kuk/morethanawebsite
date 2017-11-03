@@ -256,9 +256,9 @@ header {margin-bottom: 20px;}
 }
 
 .example-container img {
-        height: 220px;
-        width: auto;
-    }
+    height: 220px;
+    width: auto;
+}
 
 /* ### END OF PAGE SPECIFIC STYLING ### */
 
@@ -339,7 +339,7 @@ footer {
     }
     .example-container {
         float: none;
-        margin: 2.5%;
+        margin: 30px 0;
         width: 95%;
     }
     .example-container img {
