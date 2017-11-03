@@ -83,8 +83,8 @@ header {margin-bottom: 20px;}
     color: #fc8e10;
     padding: 10px;
     position: fixed;
-    top: 22px;
-    right: 21px;
+    top: 20px;
+    right: 20px;
     transition: 0.7s ease;
     z-index: 100;
 }
@@ -255,6 +255,11 @@ header {margin-bottom: 20px;}
     width: 45%;
 }
 
+.example-container img {
+        height: 220px;
+        width: auto;
+    }
+
 /* ### END OF PAGE SPECIFIC STYLING ### */
 
 /* ### Footer ### */
@@ -320,7 +325,7 @@ footer {
     }
 }
 
-/* ### Mobile ### */
+/* ### Tablet ### */
 @media screen and (max-width: 760px) {
 	section {
 		padding: 0;
@@ -329,14 +334,19 @@ footer {
 		text-align: justify;
 	}
     .header-img {
-        background-position: center;
-        height: 200px;
+        background-image: url(/images/web_design_tablet.png);
+        height: 350px;
     }
     .example-container {
         float: none;
         margin: 2.5%;
         width: 95%;
     }
+    .example-container img {
+        height: auto;
+        width: 100%;
+    }
+    
 	.grid-footer {
 		grid-template-columns: 100%;
 		grid-template-rows: auto auto auto;
@@ -345,5 +355,16 @@ footer {
 	.item-b {grid-column: 1; grid-row: 2; margin-bottom: 15px;}
 	.item-c {grid-column: 1; grid-row: 3; margin-bottom: 15px;}
 	
+}
+
+/* ### Mobile ### */
+@media screen and (max-width: 500px) {
+    .header-img {
+        background-image: url(/images/web_design_mobile.png);
+        height: 250px;
+    }
+    .menu-btn {
+        top: 10px;
+    }
 }
 /* ### Media Queries END ### */
