@@ -247,9 +247,23 @@ header {margin-bottom: 20px;}
 
 .fun-facts {   
     border-radius: 5px;
+    margin: 10px;
     padding: 10px; 
     text-align: center; 
     width: 250px; 
+}
+
+.fun-facts-wide {   
+    border-radius: 5px;
+    margin: 1.5%;
+    padding: 10px; 
+    text-align: center; 
+    width: 30%; 
+}
+
+.icon {
+    height: 128px;
+    width: 128px;
 }
 
 /* ### END OF STANDARD PAGE FEATURES ### */
@@ -367,11 +381,19 @@ footer {
 	
     .fun-facts {
         box-sizing: border-box;
-        margin-bottom: 20px;
+        margin: 10px 0 20px 0;
         width: 100%;
     }
     
     .fun-facts p {text-align: center;}
+    
+    .fun-facts-wide {
+        box-sizing: border-box;
+        margin: 10px 0 20px 0;
+        width: 100%; 
+    }
+    
+    .fun-facts-wide p {text-align: center;}
 }
 
 /* ### Mobile ### */
