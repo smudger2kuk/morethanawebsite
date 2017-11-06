@@ -242,6 +242,16 @@ header {margin-bottom: 20px;}
     cursor: pointer;
 }
 
+.left {float: left;}
+.right {float: right;}
+
+.fun-facts {   
+    border-radius: 5px;
+    padding: 10px; 
+    text-align: center; 
+    width: 250px; 
+}
+
 /* ### END OF STANDARD PAGE FEATURES ### */
 
 /* ### PAGE SPECIFIC STYLING ### */
@@ -355,6 +365,13 @@ footer {
 	.item-b {grid-column: 1; grid-row: 2; margin-bottom: 15px;}
 	.item-c {grid-column: 1; grid-row: 3; margin-bottom: 15px;}
 	
+    .fun-facts {
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .fun-facts p {text-align: center;}
 }
 
 /* ### Mobile ### */
@@ -366,5 +383,6 @@ footer {
     .menu-btn {
         top: 10px;
     }
+    
 }
 /* ### Media Queries END ### */
