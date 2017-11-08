@@ -25,8 +25,9 @@ p {margin: 0; padding: 0;}
 
 section {
 	box-sizing: border-box;
+    display: block;
 	margin: 0 auto;
-	width: 60vw;
+	width: 100%;
 }
 section p {
 	font-size: 1.6em;
@@ -42,6 +43,7 @@ h4 {font-size: 1.9em; padding: 10px; text-align: center;}
 h5 {font-size: 1.6em;}
 h6 {font-size: 1.3em;}
 p {font-size: 1em;}
+.text-center {text-align: center;}
 
 /* ### Colour Classes ### */
 .black {color: #221B1F;}
@@ -112,6 +114,76 @@ header {margin-bottom: 20px;}
     background-position: bottom;
     height: 500px;
     width: 100%;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    float: right;
+    margin-top: 15px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 1.2em;
+    color: #394945;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.dropdown {
+    color: #394945; 
+    float: left;
+    font-family: inherit;
+    font-size: 1.2em;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.dropdown .dropbtn {   
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    color: #394945;
+    padding: 14px 16px;
+    background-color: inherit;
+    transition: 0.5s ease;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #E9EB63;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    font-size: 1em;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #FC8E10;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* ### Landing Page Specific ### */
@@ -201,14 +273,26 @@ header {margin-bottom: 20px;}
 /* ### END of Page 2 ### */
 
 /* ### STANDARD PAGE FEATURES ### */
-.row {display: block; width: 100%;}
+.row {
+    display: block;
+    float: none;
+    min-height: 50vh;
+    width: 100%;
+}
 .package-container {
     border: 2px solid #FC8E10;
+    display: block;
     float: left;
     margin-bottom: 20px;
-    margin-right: 10px;
+    margin: 1%;
     padding: 10px;
-    width: 46%;
+}
+.web-design-container {
+    width: 45%;
+}
+.seo-container {
+    margin: 20px 3%;
+    width: 40%;
 }
 .page-h2 {text-align: center; width: 100%;}
 
@@ -249,6 +333,7 @@ header {margin-bottom: 20px;}
     border-radius: 5px;
     margin: 10px;
     padding: 10px; 
+    position: relative;
     text-align: center; 
     width: 250px; 
 }
@@ -345,7 +430,13 @@ footer {
 	}
     .full-page {
     }
-    .package-container {
+    .web-design-container {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: auto;
+    }
+    .seo-container {
         float: none;
         margin: 0 auto;
         margin-bottom: 20px;
