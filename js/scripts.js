@@ -1,9 +1,11 @@
+// Smooth scroll function
 function moveToDiv(id) {
     $('html, body').animate({
             scrollTop: $(id).offset().top
         }, 1500);
 }
 
+// Function to make elements with class "hidden" appear when in view
 $(document).ready(function() {
     
     /* Every time the window is scrolled ... */
