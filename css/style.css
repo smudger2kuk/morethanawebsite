@@ -44,6 +44,8 @@ h5 {font-size: 1.6em;}
 h6 {font-size: 1.3em;}
 p {font-size: 1em;}
 .text-center {text-align: center;}
+.strike {text-decoration: line-through;}
+.desc-list li {font-size: 1.4em; font-weight: 600; line-height: 2em;}
 
 /* ### Colour Classes ### */
 .black {color: #221B1F;}
@@ -87,6 +89,7 @@ header {margin-bottom: 20px;}
     position: fixed;
     top: 20px;
     right: 20px;
+    -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
     z-index: 100;
 }
@@ -101,6 +104,7 @@ header {margin-bottom: 20px;}
 #banner-link {
     color: inherit;
     text-decoration: none;
+    -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
 }
 
@@ -130,6 +134,7 @@ header {margin-bottom: 20px;}
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
 }
 
@@ -139,6 +144,7 @@ header {margin-bottom: 20px;}
     font-family: inherit;
     font-size: 1.2em;
     overflow: hidden;
+    -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
 }
 
@@ -150,6 +156,7 @@ header {margin-bottom: 20px;}
     color: #394945;
     padding: 14px 16px;
     background-color: inherit;
+    -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
 }
 
@@ -315,6 +322,7 @@ header {margin-bottom: 20px;}
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
+    -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
     min-width: 175px;
     max-width: 250px;
